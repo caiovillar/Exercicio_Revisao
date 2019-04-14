@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercício de Revisão</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="pagina.css">
+    <script type="text/javascript" src="pagina.js"></script>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <img class="logo" src="logo-impacta.png" width="300px" onclick="Alerta1()">
+        <p><h3>EXERCÍCIO DE REVISÃO</p></h3></br>
+        <nav>
+            <ul>
+                <li><a href="#sessao1">DESCRIÇÃO</a></li>
+                <li><a href="#sessao2">LISTAS</a></li>
+                <li><a href="#sessao3">FORMULÁRIO</a></li>
+                <li><a href="#sessao4">TABELA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="sessao1" id="sessao1">
+        <h1>DESCRIÇÃO</h1>
+            
+            
+            <div class="paragrafo1">
+                <img src="Globalizacao" class="imagem1" width="300px">
+                <p> Por outro lado, a revolução dos costumes nos obriga à análise do impacto na agilidade decisória. O cuidado em identificar pontos críticos no aumento do diálogo entre os diferentes setores produtivos cumpre um papel essencial na formulação do processo de comunicação como um todo. As experiências acumuladas demonstram que a contínua expansão de nossa atividade exige a precisão e a definição dos métodos utilizados na avaliação de resultados. A nível organizacional, a determinação clara de objetivos apresenta tendências no sentido de aprovar a manutenção das posturas dos órgãos dirigentes com relação às suas atribuições.</p>
+            </div>
+            
+
+            <div class="paragrafo2">
+                <p class="esquerda"> Do mesmo modo, a competitividade nas transações comerciais estimula a padronização das novas proposições. Gostaria de enfatizar que o fenômeno da Internet promove a alavancagem do remanejamento dos quadros funcionais. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a constante divulgação das informações assume importantes posições no estabelecimento do sistema de formação de quadros que corresponde às necessidades. O empenho em analisar a valorização de fatores subjetivos é uma das consequências do fluxo de informações. Caros amigos, a consulta aos diversos militantes representa uma abertura para a melhoria dos índices pretendidos. </p>
+                <img src="Globalizacao" width="300px" class="imagem2">
+                <p class="direita"> O incentivo ao avanço tecnológico, assim como a crescente influência da mídia acarreta um processo de reformulação e modernização do levantamento das variáveis envolvidas. Pensando mais a longo prazo, a mobilidade dos capitais internacionais causa impacto indireto na reavaliação das diversas correntes de pensamento. Evidentemente, o início da atividade geral de formação de atitudes ainda não demonstrou convincentemente que vai participar na mudança do orçamento setorial.</p>
+            </div>
+    </div>
+
+    <div class="sessao2" id="sessao2">
+        <h1>LISTAS</h1>
+    
+            <ol onclick="Alerta2()">
+            <li>Integração</li>
+            <li>União</li>
+            <li>Aproximação</li>
+            </ol>
+    
+           <ul onclick="Alerta3()">
+           <li>Capitalismo</li>
+           <li>Multinacionalização</li>
+           <li>Mundializaçaão</li>
+           </ul>
+    </div>
+
+    <div class="sessao3" id="sessao3">
+        <h1>FORMULÁRIO</h1>
+            <form method="POST" id="formulario" action="/recebe" onsubmit="return processar('mytable')">
+                <fieldset>
+                <label id="Nome">Nome Completo:</label>
+                <input type="text" maxlength="50" name="nome"><br/>
+
+                <label>Cor Favorita:</label>
+                <input type="text" maxlength="15" name="cor"><br/>
+
+                <label>Nascimento:</label>
+                <input type="date" name="nascimento"><br/>
+
+                <label>Salário:</label>
+                <input type="number" name="salario"><br/>
+
+                <input type="submit" value="Enviar" onclick="tabela();">
+                <input type="reset" value="Limpar">
+                </fieldset>
+            </form>
+    </div>
+
+    <div class="sessao4" id="sessao4">
+        <h1>TABELA</h1>
+
+            <table id="tabela">
+            <thead>
+
+            <tr>
+            <th>Nome Completo</th>
+            <th>Cor Favorita</th>
+            <th>Nascimento</th>
+            <th>Salário</th>
+            </tr>
+            </thead>
+
+            <tbody id="mytable">
+
+                </tbody>
+            </table>
+    </div>
+
+    <footer class="rodape">
+        <h5>EXERCÍCIO DE REVISÃO</h5>
+        <h5>CAIO MARCELLO MOLLICA VILLAR    RA. 7201033</h5>
+    </footer>
+</body>
+</html>
